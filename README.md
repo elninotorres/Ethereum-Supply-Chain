@@ -42,10 +42,6 @@ This repository containts an Ethereum DApp that demonstrates a Supply Chain flow
 
 Please make sure you've already installed ganache-cli, Truffle and enabled MetaMask extension in your browser.
 
-```
-Give examples (to be clarified)
-```
-
 To Run the project
 ```
 
@@ -55,41 +51,16 @@ Launch Ganache:
 ganache-cli -m "spirit supply whale amount human item harsh scare congress discover talent hamster"
 ```
 
-Your terminal should look something like this:
-
-![truffle test](images/ganache-cli.png)
-
 In a separate terminal window, Compile smart contracts:
 
-```
 truffle compile
-```
 
-Your terminal should look something like this:
 
-![truffle test](images/truffle_compile.png)
+truffle migrate --reset --network rinkeby
 
-This will create the smart contract artifacts in folder ```build\contracts```.
-
-Migrate smart contracts to the locally running blockchain, ganache-cli:
-
-```
-truffle migrate
-```
-
-Your terminal should look something like this:
-
-![truffle test](images/truffle_migrate.png)
-
-Test smart contracts:
-
-```
 truffle test
-```
 
 All 10 tests should pass.
-
-![truffle test](images/truffle_test.png)
 
 In a separate terminal window, launch the DApp:
 
